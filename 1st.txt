@@ -1,0 +1,130 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class MultipleProducts {
+	
+WebDriver driver;
+	
+	static String Vivo="//img[@alt='A74']";
+	static String Qty="//select[@id='quantity']";
+	//static String value="//option[@value='1']";
+	static String AddToCart="//input[@value='Add to Cart']";
+	
+	static String Qty1="//select[@id='quantity']";
+	static String Cart="(//input[@aria-labelledby='attach-sidesheet-view-cart-button-announce'])[1]";
+	static String cart="//a[@href='/gp/cart/view.html?ref_=sw_gtc']";
+	
+	static String Buy="//input[@name='proceedToRetailCheckout']";
+	
+	
+  @Test
+  public void Multi() throws InterruptedException {
+	  
+	  System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Selenium\\chromedriver_win32\\chromedriver.exe");
+	  driver =new ChromeDriver();
+	  driver.manage().window().maximize();
+	  driver.get("https://amazon.in/");
+	  
+	  
+	  
+	  driver.findElement(By.xpath("//a[text()='Mobiles']")).click();
+	  
+	  
+	  /*WebElement MB=driver.findElement(By.xpath(Vivo));
+	  Actions action =new Actions(driver);
+	  action.moveToElement(MB).click();*/
+	  
+	  Thread.sleep(3000);
+	  driver.findElement(By.xpath(Vivo)).click();
+	  
+	  Thread.sleep(3000);
+	  driver.findElement(By.xpath(Qty)).click();
+	  
+	  Select dropdown=new Select(driver.findElement(By.xpath(Qty)));
+	  dropdown.selectByIndex(1);
+	  
+	  driver.findElement(By.xpath(AddToCart)).click();
+	  
+	  Thread.sleep(3000);
+	  driver.findElement(By.xpath("//a[@id='attach-close_sideSheet-link']")).click();
+	  
+	  Thread.sleep(3000);
+	  driver.findElement(By.xpath("//a[text()='Mobiles']")).click();
+	  
+	  driver.findElement(By.xpath("(//img[@class='s-image'])[1]")).click();
+	  
+	  Set<String> set=driver.getWindowHandles();
+	  ArrayList<String> tabs=new ArrayList<String>(set); 
+	  driver.switchTo().window(tabs.get(1));
+	  
+	  
+	//WebElement Cart=findElement(By.xpath("//span[text()='Add to Cart']"));
+	  
+	 Thread.sleep(5000); 
+	 driver.findElement(By.xpath(Qty1)).click();
+	  
+	 Select droupdown1=new Select(driver.findElement(By.xpath(Qty)));
+	 droupdown1.selectByIndex(1);
+	 
+	 driver.findElement(By.xpath("//input[@id='add-to-cart-button']")).click();
+	  
+	 Thread.sleep(3000);
+	 driver.findElement(By.xpath(cart)).click();
+	 
+	 String cartamount=driver.findElement(By.xpath("(//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap'])[1]")).getText();
+		System.out.println("Total Cart Amount is :" +cartamount);
+		Float floatcartamount=getFloat_From_String(cartamount);
+		System.out.println("Float Cart Amount 1 is :" +floatcartamount);
+		
+		String Product1=driver.findElement(By.xpath("(//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold'])[2]")).getText();
+		System.out.println("OPPO Product Amount is :" +Product1);
+		Float floatproduct1=getFloat_From_String(Product1);
+		System.out.println("Float Product1 Amount is :" +floatproduct1);
+		
+		String Quantity1=driver.findElement(By.xpath("(//span[@class='a-dropdown-prompt'])[2]")).getText();
+		Float floatquantity1=getFloat_From_String(Quantity1);
+		System.out.println("Float Quantity1 is: "+floatquantity1);
+		
+		String Product2=driver.findElement(By.xpath("(//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold'])[1]")).getText();
+		System.out.println("BT Product Amount is :" +Product2);
+		Float floatproduct2=getFloat_From_String(Product2);
+		System.out.println("Float Product2 Amount is :" +floatproduct2);
+		
+		String Quantity2=driver.findElement(By.xpath("(//span[@class='a-dropdown-prompt'])[1]")).getText();
+		Float floatquantity2=getFloat_From_String(Quantity2);
+		System.out.println("Float Quantity2 is: "+floatquantity2);
+	  	  
+		//Float ToatalAmount=(float)((floatproduct1)*(floatquantity1));
+		//System.out.println("Total Cart Amount is: "+ToatalAmount);
+		
+		Float TotalAmount=(float)(((floatproduct1)(floatquantity1))+((floatproduct2)(floatquantity2)));
+		 System.out.println("Total cart amount is: "+TotalAmount);
+
+if((float)TotalAmount==(float)floatcartamount)
+{
+	 
+	  System.out.println("Cart Amount is Matching");
+	  //driver.findElement(By.xpath(Buy)).click();
+}
+else
+{
+
+	  System.out.println("Cart Amount is not Matching");
+	 
+}			
+}
+
+public static  float getFloat_From_String(String str)
+{
+
+	String output = str.replace("?", "").replace(",", "");
+	float f=Float.parseFloat(output);
+	return f;
+
+	  	   
+  }
+	  
+}

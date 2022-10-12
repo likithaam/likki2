@@ -1,0 +1,31 @@
+<a href="/gp/cart/view.html?ref_=sw_gtc" class="a-button-text">
+Go to Cart
+</a>
+
+//a[@class='a-button-text']
+
+
+
+<a href="/gp/cart/view.html?ref_=sw_gtc" class="a-button-text">
+Go to Cart
+</a>
+
+
+
+<span class="a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold"><span class="currencyINR">&nbsp;&nbsp;</span>249.00</span>
+
+
+//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold']
+
+
+<span class="a-button-text a-declarative" data-csa-c-func-deps="aui-da-a-dropdown-button" data-csa-c-type="widget" data-csa-interaction-events="click" data-action="a-dropdown-button" aria-hidden="true" data-csa-c-id="vywmts-pgl9hq-clhr04-x1z2f8" id="a-autoid-0-announce"><span class="a-dropdown-label">Qty:<span class="sc-offscreen-label" aria-label="Quantity"></span></span><span class="a-dropdown-prompt">1</span></span>
+
+
+//span[@class='a-button-text a-declarative']
+
+
+
+
+
+
+"//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold']"

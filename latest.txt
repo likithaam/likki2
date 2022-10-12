@@ -1,0 +1,41 @@
+static String Electronics="//a[text()=' Electronics ']";
+	static String searchBar="//input[@id='twotabsearchtextbox']";
+	static String searchButton="//input[@id='nav-search-submit-button']";
+	static String Samsung="//img[@alt='Sponsored Ad - Samsung 138 cm (55 inches) Crystal 4K Series Ultra HD Smart LED TV UA55AUE60AKLXL (Black)']";
+	static String AddToCart= "//input[@id='add-to-cart-button']";
+	static String Cart="(//input[@class='a-button-input'])[26]";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+indElement(By.xpath( Electronics)).click();
+		findElement(By.xpath( searchBar)).sendKeys("samsung tv 43 inch 4k ultra hd smart tv");
+		findElement(By.xpath(searchButton)).click();
+		
+		//Actions actions = new Actions(driver);
+	    //actions.moveToElement(driver.findElement(By.xpath(BallPen))).click().perform();
+		Thread.sleep(5000);
+	    findElement(By.xpath(Samsung)).click();
+		Thread.sleep(5000);
+		findElement(By.xpath(AddToCart)).click();
+		Thread.sleep(5000);
+		findElement(By.xpath(Cart)).click();
+		
+		//Select dropdown= new Select(driver.findElement(By.id("quantity")));
+		//dropdown.selectByIndex(4);
+		

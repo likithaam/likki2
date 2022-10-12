@@ -1,0 +1,23 @@
+//*[@id="resultTable"]/tbody/tr/td[2]/a
+//*[@id="resultTable"]/tbody/tr[2]/td[2]/a
+
+//a[contains(text(),'0317')]//following::td[1] 
+
+
+/html/body/div[3]/div[2]/div/div[1]/div/div[1]/div[2]/div[1]-------we dont take Absolute xpath then we have to write xpath manually
+
+
+
+<div class="Cell">Amaranth leaves</div>
+
+
+(//div[@class='Row'])[2]//following::div[1]
+
+
+
+
+
+
+
+
+ 

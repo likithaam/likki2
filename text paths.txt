@@ -1,0 +1,14 @@
+
+<a href="/mobile-phones/b/?ie=UTF8&amp;node=1389401031&amp;ref_=nav_cs_mobiles" class="nav-a  " tabindex="0" data-csa-c-type="link" data-csa-c-slot-id="nav_cs_1" data-csa-c-content-id="nav_cs_mobiles" data-csa-c-id="jhpc98-istaq6-sqe4u-1wn5gv">Mobiles</a>
+//a[text()='Mobiles']
+
+
+<a href="/gp/browse.html?node=6648217031&amp;ref_=nav_cs_fashion" class="nav-a  " tabindex="0" data-csa-c-type="link" data-csa-c-slot-id="nav_cs_5" data-csa-c-content-id="nav_cs_fashion" data-csa-c-id="w3m3pu-ts8djq-5w5w65-sciguo">Fashion</a>
+//a[text()='Fashion']
+
+
+<a href="/gp/new-releases/?ref_=nav_cs_newreleases" class="nav-a  " tabindex="0" data-csa-c-type="link" data-csa-c-slot-id="nav_cs_8" data-csa-c-content-id="nav_cs_newreleases" data-csa-c-id="arj1jm-wdjf2s-47huth-4kforu">New Releases</a>
+//a[text()='New Releases']
+
+
+<span class="a-size-small a-color-base truncate-2line">Electronics</span>

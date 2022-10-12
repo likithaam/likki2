@@ -1,0 +1,8 @@
+<a class="mt_a" href="country/us/">USA</a>
+
+
+//a[contains(text(),'USA')]//following::td[1]
+
+
+
+String TotalCasesXpath="(//a[contains(text(),'" + str +"')])[1]//following::td[1]";

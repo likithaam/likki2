@@ -1,0 +1,20 @@
+//a[text()='Mobiles']
+
+
+<img class="s-image" src="https://m.media-amazon.com/images/I/810KHyQ4WcL._AC_UL320_.jpg" srcset="https://m.media-amazon.com/images/I/810KHyQ4WcL._AC_UL320_.jpg 1x, https://m.media-amazon.com/images/I/810KHyQ4WcL._AC_UL480_QL65_.jpg 1.5x, https://m.media-amazon.com/images/I/810KHyQ4WcL._AC_UL640_QL65_.jpg 2x, https://m.media-amazon.com/images/I/810KHyQ4WcL._AC_UL800_QL65_.jpg 2.5x, https://m.media-amazon.com/images/I/810KHyQ4WcL._AC_UL960_QL65_.jpg 3x" alt="Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery" data-image-index="-1" data-image-load="" data-image-latency="s-product-image" data-image-source-density="1">
+
+(//img[@class='s-image'])[3]
+
+<span class="a-size-base-plus a-color-base a-text-normal">Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery</span>
+
+//span[@class='a-size-base-plus a-color-base a-text-normal']
+
+<input id="add-to-cart-button" name="submit.add-to-cart" title="Add to Shopping Cart" data-hover="Select <b>__dims__</b> from the left<br> to add to Shopping Cart" class="a-button-input attach-dss-atc" type="button" value="Add to Cart" aria-labelledby="submit.add-to-cart-announce">
+
+//input[@id='add-to-cart-button']
+
+
+<input class="a-button-input" type="submit" aria-labelledby="attach-sidesheet-view-cart-button-announce">
+
+
+//input[@class='a-button-input']

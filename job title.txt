@@ -1,0 +1,80 @@
+<a href="#" id="menu_admin_Qualifications" class="arrow">Qualifications</a>
+
+
+//a[text()='Qualifications']
+
+
+<a href="/index.php/admin/viewSkills" id="menu_admin_viewSkills">Skills</a>
+
+
+//a[text()='Skills']
+
+
+<input type="button" class="addbutton" id="btnAdd" value="Add">
+
+//input[@id='btnAdd']
+
+<input type="text" name="skill[name]" class="block default editable valid" maxlength="120" id="skill_name">
+
+//input[@id='skill_name']
+
+
+<textarea rows="5" cols="10" name="skill[description]" class="editable" id="skill_description"></textarea>
+
+//textarea[@id='skill_description']
+
+
+<a href="/index.php/admin/viewEducation" id="menu_admin_viewEducation">Education</a>
+
+
+//a[text()='Education']
+
+
+
+
+<input type="button" class="addbutton" id="" value="Add">
+
+//input[@class='addbutton'][2]
+
+
+<input type="text" name="education[name]" class="block default editable valid" maxlength="100" id="education_name">
+
+
+//input[@id='education_name']
+
+
+
+<input type="button" class="addbutton" name="btnSave" id="btnSave" value="Save">
+
+//input[@id='btnSave']
+
+
+
+//a[text()='Job']
+
+<a href="/index.php/admin/viewJobTitleList" id="menu_admin_viewJobTitleList">Job Titles</a>
+//a[text()='Job Titles']
+
+
+<input type="button" class="" id="btnAdd" name="btnAdd" value="Add">
+
+//input[@id='btnAdd']
+
+
+
+<input type="text" name="jobTitle[jobTitle]" maxlength="100" id="jobTitle_jobTitle">
+//input[@id='jobTitle_jobTitle']
+
+
+
+<textarea rows="4" cols="30" name="jobTitle[jobDescription]" maxlength="400" id="jobTitle_jobDescription"></textarea>
+
+//textarea[@id='jobTitle_jobDescription']
+
+<textarea rows="4" cols="30" name="jobTitle[note]" id="jobTitle_note"></textarea>
+
+//textarea[@id='jobTitle_note']
+
+<input type="button" class="editButton" name="btnSave" id="btnSave" value="Save">
+//input[@id='btnSave']
+
